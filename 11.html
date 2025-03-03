@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏平台 - 赛博朋克 2077</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        .navbar {
+            background-color: #0d0d0d;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            color: #00bfff;
+        }
+        .game-hero {
+            background: url('https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg?t=1695140956') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .game-hero h1 {
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .game-hero p {
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .game-details {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .game-details h2 {
+            font-size: 32px;
+            color: #00bfff;
+        }
+        .game-details p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .game-screenshots {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .game-screenshots img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .game-screenshots img:hover {
+            transform: scale(1.05);
+        }
+        .buy-button {
+            background-color: #00bfff;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .buy-button:hover {
+            background-color: #009acd;
+        }
+        .footer {
+            background-color: #0d0d0d;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .footer a {
+            color: #00bfff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <div>
+            <a href="#">首页</a>
+            <a href="#">游戏库</a>
+            <a href="#">社区</a>
+        </div>
+        <div>
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+        </div>
+    </div>
+
+    <!-- 游戏主图 -->
+    <div class="game-hero">
+        <div>
+            <h1>赛博朋克 2077</h1>
+            <p>未来都市的冒险之旅</p>
+        </div>
+    </div>
+
+    <!-- 游戏详情 -->
+    <div class="game-details">
+        <h2>游戏介绍</h2>
+        <p>
+            《赛博朋克 2077》是一款开放世界动作冒险游戏，由 CD Projekt Red 开发。故事发生在夜之城，一个充满未来科技与黑暗阴谋的大都市。玩家将扮演 V，一名可自定义角色的雇佣兵，探索这个充满危险与机遇的世界。
+        </p>
+        <h2>游戏特色</h2>
+        <ul>
+            <li>开放世界探索：自由探索夜之城的每一个角落。</li>
+            <li>深度角色定制：自定义角色的外观、技能和装备。</li>
+            <li>丰富的剧情：多线剧情，玩家的选择将影响故事走向。</li>
+            <li>未来科技：体验高科技武器、义体和网络黑客。</li>
+        </ul>
+
+        <!-- 游戏截图 -->
+        <h2>游戏截图</h2>
+        <div class="game-screenshots">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1091500/ss_4eb068b5cfd9272029b3650b2e9b1527a3e76d7f.600x338.jpg" alt="截图1">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1091500/ss_0002f18563d313bdd1d82c725d411408ebf762b0.600x338.jpg" alt="截图2">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1091500/ss_90cc41d4c52d56f5ab26e6332078091222c3d541.600x338.jpg" alt="截图3">
+        </div>
+
+        <!-- 购买按钮 -->
+        <button class="buy-button">立即购买</button>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        <p>&copy; 2023 游戏平台. 版权所有. <a href="#">隐私政策</a> | <a href="#">服务条款</a></p>
+    </div>
+</body>
+</html>
